@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   mount Karafka::Web::App, at: '/karafka'
+
+  get "/welcome", to: "welcome#index"
 end
