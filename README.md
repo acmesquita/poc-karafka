@@ -34,6 +34,17 @@ rails s
 Karafka.producer.produce_sync(topic: 'example', payload: { 'ping' => 'pong' }.to_json)
 ```
 
+or access:
+
+http://localhost:3000/welcome
+
+```
+[58d526f9fd0d] Consume job for ExampleConsumer on example/0 started
+"############"
+{"ping"=>"pong"}
+"############"
+```
+
 5. Look count messages
 
 Access: http://localhost:3000/karafka
